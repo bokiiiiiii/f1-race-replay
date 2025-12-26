@@ -1002,6 +1002,13 @@ class QualifyingReplay(arcade.Window):
             if self.frame_index >= self.n_frames - 1:
                 self.paused = True
 
-def run_qualifying_replay(session, data, title="Qualifying Results"):
+def run_qualifying_replay(session, data, title="Qualifying Results", ready_file=None):
     window = QualifyingReplay(session=session, data=data, title=title)
+    # Signal readiness to parent process (if requested) after window created
+    if ready_file:
+        try:
+            with open(ready_file, 'w') as f:
+                f.write('ready')
+        except Exception:
+            pass
     arcade.run()
