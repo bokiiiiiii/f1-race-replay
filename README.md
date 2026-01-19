@@ -20,6 +20,12 @@ A Python application for visualizing Formula 1 race telemetry and replaying race
 - **Rewind/Fast Forward:** ← / → or Rewind/Fast Forward buttons
 - **Playback Speed:** ↑ / ↓ or Speed button (cycles through 0.5x, 1x, 2x, 4x)
 - **Set Speed Directly:** Keys 1–4
+- **Restart**: **R** to restart replay
+- **Toggle DRS Zone**: **D** to hide/showi DRS Zone
+- **Toggle Progress Bar**: **B** to hide/show progress bar
+- **Toggle Driver Names**: **L** to hide/show driver names on track
+- **Select driver/drivers**: Click to select driver or shift click to select multiple drivers
+
 
 ## Qualifying Session Support (in development)
 
